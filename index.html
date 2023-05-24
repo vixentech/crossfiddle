@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CrossFiddle</title>
+    <style>
+      body {
+        background-color: #292d3e;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #b38eff;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .editor-container {
+        background-color: #1e2130;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      label {
+        color: #b38eff;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      textarea {
+        background-color: #292d3e;
+        border: none;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        height: 100px;
+        outline: none;
+        padding: 5px;
+        resize: vertical;
+        width: 98%;
+      }
+
+      .editor-column {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      #preview-container {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      #output {
+        border: none;
+        width: 100%;
+        height: 395px;
+      }
+      .banner {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor-column">
+        <div class="editor-container">
+          <label for="html-input">HTML</label>
+          <textarea id="html-input"></textarea>
+        </div>
+
+        <div class="editor-container">
+          <label for="css-input">CSS</label>
+          <textarea id="css-input"></textarea>
+        </div>
+
+        <div class="editor-container">
+          <label for="js-input">JavaScript</label>
+          <textarea id="js-input"></textarea>
+        </div>
+      </div>
+
+      <div id="preview-container">
+        <label for="output">Preview</label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+
+    <div class="banner">
+      CrossFiddle v1.0 - Catie Clark &lt;catielovexo@gmail.com&gt;
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
+

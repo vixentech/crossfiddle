@@ -1,0 +1,16 @@
+{
+  "name": "crossfiddle",
+  "version": "1.0.0",
+  "description": "JSFiddle Clone built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . --platform=mas --arch=arm64 --out=dist/  --icon=crossfiddle-icon.icns"
+  },
+  "author": "Catie Clark <catielovexo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^24.3.1",
+    "electron-packager": "^17.1.1"
+  }
+}
